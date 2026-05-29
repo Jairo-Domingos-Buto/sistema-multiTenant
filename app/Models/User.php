@@ -32,6 +32,6 @@ class User extends Authenticatable
 
     // relacionamento de muitos para muitos com a model membership
     public function membership():HasMany{
-        return $this->HasMany(MemberShip:class)
+        return $this->HasMany(MemberShip::class);
     }
 }
